@@ -17,6 +17,7 @@
         }
         /*General*/
         body {
+            background-color: var(--powder-blue);
             font-family:  FreeMono, monospace;
             margin: 0;
             padding: 0;
@@ -24,7 +25,7 @@
             line-height: 1.6;
         }
         header {
-            background: var(--powder-blue);
+            background: var(--cadet-gray);
             color: var(--rose-quartz);
             padding: 20px 10px;
             text-align: center;
@@ -65,12 +66,12 @@
             margin-bottom: 40px;
         }
         h2 { 
-            border-bottom: 2px solid var(--powder-blue); /*lines under headings*/
+            border-bottom: 2px solid var(--cool-gray); /*lines under headings*/
             padding-bottom: 10px;
-            color: var(--rose-quartz); /*color of the headings*/
+            color: var(--cool-gray); /*color of the headings*/
         }
         .project, .skill { /*shadow boxes behind each element*/
-            background: var(--powder-blue);
+            background: var(--cool-gray);
             margin: 10px 0;
             padding: 15px;
             border-radius: 5px;
@@ -86,6 +87,16 @@
             text-align: center;
             padding: 10px;
         }
+        a {
+            color: var(--rose-quartz);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--rose-quartz);
+            text-decoration: underline;
+        }
+        
         /* Responsive Design */
         @media (max-width: 768px) {
             .project, .skill {
