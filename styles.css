@@ -1,0 +1,267 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffd5ed;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode main {
+    background-color: #1e1e1e;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #ffd5ed;
+    border-bottom: 4px solid #fe93d4;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+    border-bottom: 4px solid #e30083;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fe93d4;
+    margin-bottom: 1rem;
+}
+
+.text-content {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #e30083;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #e30083;
+}
+
+body.dark-mode header h1,
+body.dark-mode header p {
+    color: #e0e0e0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fe93d4;
+    border-top: 4px solid #fe93d4;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+body.dark-mode nav {
+    background-color: #1e1e1e;
+    border-top: 4px solid #1e1e1e;
+}
+
+nav a {
+    color: #e30083;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    display: ease;
+    align-items: center;
+}
+
+body.dark-mode nav a {
+    color: #e0e0e0;
+}
+
+nav a:hover {
+    background-color: #FFD5ED;
+}
+
+body.dark-mode nav a:hover {
+    background-color: #e30083;
+}
+
+/* Portfolio Dropdown Styles */
+.portfolio-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.portfolio-dropdown a {
+    color: #e30083;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-dropdown:hover a {
+    background-color: #ffd5ed;
+}
+
+body.dark-mode .portfolio-dropdown:hover a {
+    background-color: #e30083;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffd5ed;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: #e30083;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+}
+
+.dropdown-content a:hover {
+    background-color: #fe93d4;
+    color: #fff;
+}
+
+/* Show dropdown on hover */
+.portfolio-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Skip to main content */
+.skip-to-main {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #E40A88;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.skip-to-main:hover {
+    background-color: #FE93D4;
+}
+
+/* Toggle Button */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #E40A88;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #FE93D4;
+}
+
+/* Main Content */
+main {
+    padding: 3rem 1.5rem;
+    background-color: #f1f1f1;
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+/* Section */
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #E40A88;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #FFD5ED;
+}
+
+.project {
+    margin-top: 1rem;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+}
+
+/* Project Section */
+.project a {
+    color: #fe93d4;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.project a:hover {
+    color: #e30083;
+    text-decoration: none;
+}
+
+/* Contact Section */
+#contact a {
+    color: #8e44ad;
+}
+
+#contact a:hover {
+    color: #e30083;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fe93d4;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Hyperlink Colors */
+a {
+    color: #8e44ad;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e30083;
+}
