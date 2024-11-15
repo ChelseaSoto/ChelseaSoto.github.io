@@ -1,7 +1,136 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>Welcome to my portfolio</h1>
-        <p>This is hosted on GitHub Pages</p>
-    </body>
+<html land="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="Chelsea Soto's Portfolio, a game developer who specializes in tech design."
+    <title>Chelsea Soto | Tech Designer for Video Games</title>
+    <style>
+        /*General*/
+        body {
+            font-family:  FreeMono, monospace;
+            margin: 0;
+            padding: 0;
+            color: #9d858d;
+            line-height: 1.6;
+        }
+        header {
+            background: #a4bfeb;
+            color: #9d858d;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a { /*header links*/
+            color: #bba0b2;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:focus, nav a:hover {
+            text-decoration: underline;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #8cabbe;
+            color: #A4A8D1;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        .skip-link:focus {
+            top: 10px;
+        }
+        .container {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 { 
+            border-bottom: 2px solid #a4bfeb /*lines under headings*/
+            padding-bottom: 10px;
+            color: #a4bfeb /*color of the headings*/
+        }
+        .project, .skill { /*shadow boxes behind each element*/
+            background: #ecf0f1;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #a4bfeb;
+            color: #A4A8D1;
+            text-align: center;
+            padding: 10px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project, .skill {
+                font-size: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <h1>Chelsea Soto</h1>
+        <p>Tech Designer | Game Developer</p>
+        <nav aria-label="Main Navigation">
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#skills">Skills</a>
+            <a href="contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main" class="container">
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            
+            <p>Hiiiiiiiiiii This is me</p>
+        </section>
+
+        <section id="portfolio" aria-labelledby="portfolio-heading">
+            <h2 id="portfolio-heading">Portfolio</h2>
+            
+            <div class="project">
+                <h3>PROJECT NAME</h3>
+                <p>PROJECT DESCRIPTION</p>
+            </div>
+
+
+        </section>
+
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+
+            <div class = "skill">
+                <strong>Game Engines:</strong> Unity, Unreal Engine 5
+            </div>
+
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+
+            <p>Feel free to contact me!</p>
+            <p>Email: <a href="mailto:chelsea.soto001@gmail.com">chelsea.soto001@gmail.com</a></p>
+            <p>LinkedIn:<a href="https://www.linkedin.com/in/chelseasoto001" target="_blank">chelseasoto001</a></p>
+            <p>GitHub: <a href="https://github.com/ChelseaSoto" target="_blank">ChelseaSoto</a></p>
+        </section>
+    </main>
+
+    <footer> Built with HTML and CSS </footer>
+    
+</body>
 </html>
