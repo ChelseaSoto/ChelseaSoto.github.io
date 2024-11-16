@@ -202,7 +202,7 @@ body.dark-mode .portfolio-dropdown:hover a {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: transparent;
+    background-color: #E40A88;
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -216,7 +216,7 @@ body.dark-mode .portfolio-dropdown:hover a {
 }
 
 #theme-toggle:hover {
-    background-color: #E40A88;
+    background-color: #FE93D4;
 }
 
 body.dark-mode #theme-toggle img {
