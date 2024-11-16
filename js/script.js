@@ -25,8 +25,8 @@ document.addEventListener('mousemove', (event) => {
     const cursorGif = document.getElementById('cursor-gif');
     console.log("Mouse moved to: ", event.pageX, event.pageY); // Debug
 
-    const offsetX = -25; // Horizontal offset
-    const offsetY = -10; // Vertical offset
+    const offsetX = -30; // Horizontal offset
+    const offsetY = 25; // Vertical offset
 
     cursorGif.style.left = `${event.pageX + offsetX}px`;
     cursorGif.style.top = `${event.pageY + offsetY}px`;
