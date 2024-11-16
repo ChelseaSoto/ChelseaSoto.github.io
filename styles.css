@@ -24,17 +24,18 @@ header {
     padding: 2rem 1rem;
     /*background-color: #ffd5ed;*/
     background-image: url('assets/images/bruh.jpg');
-    background-size: cover; /* Makes the image cover the entire page */
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     border-bottom: 4px solid #fe93d4;
 }
 
 body.dark-mode header {
+    /*background-color: #1e1e1e;*/
     background-image: url('assets/images/darkbruh.jpg');
-    background-size: cover; /* Makes the image cover the entire page */
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     border-bottom: 4px solid #e30083;
 }
 
