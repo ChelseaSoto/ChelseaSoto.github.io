@@ -22,12 +22,19 @@ body.dark-mode main {
 header {
     text-align: center;
     padding: 2rem 1rem;
-    background-color: #ffd5ed;
+    /*background-color: #ffd5ed;*/
+    background-image: url('assets/images/bruh.jpg');
+    background-size: cover; /* Makes the image cover the entire page */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     border-bottom: 4px solid #fe93d4;
 }
 
 body.dark-mode header {
-    background-color: #1e1e1e;
+    background-image: url('assets/images/darkbruh.jpg');
+    background-size: cover; /* Makes the image cover the entire page */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     border-bottom: 4px solid #e30083;
 }
 
@@ -39,8 +46,8 @@ body.dark-mode header {
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #fe93d4;
