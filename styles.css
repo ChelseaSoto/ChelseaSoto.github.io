@@ -341,11 +341,15 @@ a:hover {
 
 #cursor-gif {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 1000;
     width: 75px;
     height: 75px;
-    transition: transform 0.05s ease;
+    display: block;
 }
+
 
 
