@@ -210,17 +210,17 @@ body.dark-mode .portfolio-dropdown:hover a {
 }
 
 #theme-toggle img {
-    width: 24px; /* Size of the moon icon */
+    width: 24px;
     height: 24px;
-    fill: #fff; /* Icon color */
+    fill: #fff;
 }
 
 #theme-toggle:hover {
-    background-color: #E40A88; /* Optional hover effect */
+    background-color: #E40A88;
 }
 
 body.dark-mode #theme-toggle img {
-    content: url('assets/icons/sun.svg'); /* Change to a sun icon when dark mode is active */
+    content: url('assets/icons/sun.svg');
 }
 
 /* Main Content */
@@ -311,19 +311,19 @@ a:hover {
 
     /* Navigation */
     nav {
-        flex-direction: column; /* Stacks the nav items vertically */
+        flex-direction: column;
         padding: 0;
         width: 100%;
     }
 
     nav a {
         padding: 1rem;
-        width: 100%; /* Ensures full-width links on small screens */
-        text-align: left; /* Aligns text left for mobile */
+        width: 100%;
+        text-align: left;
     }
 
     .portfolio-dropdown {
-        display: none; /* Hide dropdown on mobile */
+        display: none;
     }
 
     /* Skip to main button */
@@ -338,3 +338,14 @@ a:hover {
         right: 10px;
     }
 }
+
+#cursor-gif {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1000;
+    width: 75px;
+    height: 75px;
+    transition: transform 0.05s ease;
+}
+
+

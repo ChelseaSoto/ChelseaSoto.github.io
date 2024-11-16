@@ -20,3 +20,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 });
+
+document.addEventListener('mousemove', (event) => {
+    const cursorGif = document.getElementById('cursor-gif');
+    const offsetX = -25; // Horizontal offset
+    const offsetY = -10; // Vertical offset
+
+    cursorGif.style.left = `${event.pageX + offsetX}px`;
+    cursorGif.style.top = `${event.pageY + offsetY}px`;
+});
