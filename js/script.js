@@ -34,3 +34,28 @@ document.addEventListener('mousemove', (event) => {
     console.log("GIF positioned at: ", cursorGif.style.left, cursorGif.style.top); // Debug
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const devlogEntries = document.querySelectorAll(".devlog-entry");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.1 }
+    );
+
+    devlogEntries.forEach((entry) => observer.observe(entry));
+});
+
+document.addEventListener("scroll", () => {
+    const backToTop = document.getElementById("back-to-top");
+    if (window.scrollY > 300) {
+        backToTop.classList.add("visible");
+    } else {
+        backToTop.classList.remove("visible");
+    }
+});

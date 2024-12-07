@@ -1,90 +1,216 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Revenant: Through The Veil by Excavator Studios">
-    <title>Revenant: Through The Veil | Excavator Studios</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Skip Link -->
-    <a href="#main-content" class="skip-to-main">
-        <img src="assets/icons/skip.svg" alt="Skip to main content">
-    </a>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Revenant: Through The Veil by Excavator Studios">
+        <title>Revenant: Through The Veil | Excavator Studios</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Skip Link -->
+        <a href="#main-content" id="scroll-button" class="skip-to-main">
+            <img src="assets/icons/skip.svg" alt="Skip to main content">
+        </a>
 
-    <!-- Dark Mode Toggle Button -->
-    <button id="theme-toggle">
-        <img src="assets/icons/moon.svg" alt="Press this to toggle between light and dark mode">
-    </button>
+        <!-- Back to Top -->
+        <a href="#top" id="back-to-top">
+            <img src="assets/icons/up-arrow.svg" alt="Skip to top">
+        </a>
 
-    <header>
-        <div class="header-content">
-            <img src="assets/images/pfp.JPEG" alt="Chelsea Soto" class="profile-pic">
-            <div class="text-content">
-                <h1>Revenant: Through The Veil</h1>
-                <p>Excavator Studios | October 2024 - April 2025 </p>
-            </div>
-        </div>
-        <nav aria-label="Main Navigation">
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About Me</a>
-            <div class="portfolio-dropdown">
-                <a href="index.html#portfolio">Portfolio</a>
-                <div class="dropdown-content">
-                    <a href="revenant.html">Revenant</a>
-                    <a href="cryptid.html">Cryptid Control</a>
-                    <a href="citruspop.html">CitrusPOP!</a>
-                    <a href="redhanded.html">RedHanded</a>
+        <!-- Dark Mode Toggle Button -->
+        <button id="theme-toggle">
+            <img src="assets/icons/moon.svg" alt="Press this to toggle between light and dark mode">
+        </button>
+
+        <header>
+            <div class="header-content">
+                <img src="assets/images/pfp.JPEG" alt="Chelsea Soto" class="profile-pic">
+                <div class="text-content">
+                    <h1>Revenant: Through The Veil</h1>
+                    <p>Excavator Studios | October 2024 - April 2025 </p>
                 </div>
-            </div>  
-            <a href="index.html#skills">Skills</a>
-            <a href="index.html#contact">Contact</a>
-        </nav>
-    </header>
+            </div>
+            <nav aria-label="Main Navigation">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Me</a>
+                <div class="portfolio-dropdown">
+                    <a href="index.html#portfolio">Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="revenant.html">Revenant</a>
+                        <a href="cryptid.html">Cryptid Control</a>
+                        <a href="citruspop.html">CitrusPOP!</a>
+                        <a href="redhanded.html">RedHanded</a>
+                    </div>
+                </div>  
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </header>
 
-    <main id="main-content" role="main" class="container">
-        <!--Title Image-->
-        <section id="title-image">
-            <img src="assets/images/Revenant/title.png" alt="Revenant Title Image" class="responsive-image">
-        </section>
+        <main id="main-content" role="main" class="container">
+            <!--Title Image-->
+            <section id="title-image">
+                <img src="assets/images/Revenant/title.png" alt="Revenant Title Image" class="responsive-image">
+            </section>
 
-        <!--About Game-->
-        <section id="about-game">
-            <h2>About Revenant</h2>
-            <p>Fight and solve puzzles to save your dead lover. How much are you willing to sacrifice to restore what was once yours?</p>
-            <p><strong>Revenant: Through The Veil</strong> is a third-person action-adventure game developed by Excavator Studios that centers around Egyption mythology and The Book of the Dead.
-            <p>This is a game I am working on as part of my senior capstone project at the University of Central Florida. It is my first time working with Unreal Engine, and I am the technical
-                designer and UI programmer for a development team of 14 people.</p>
-        </section>
+            <!--About Game-->
+            <section id="about-game">
+                <h2>About Revenant</h2>
+                <p>Fight and solve puzzles to save your dead lover. How much are you willing to sacrifice to restore what was once yours?</p>
+                <p><strong>Revenant: Through The Veil</strong> is a third-person action-adventure game developed by Excavator Studios that centers around Egyption mythology and The Book of the Dead.
+                <p>This is a game I am working on as part of my senior capstone project at the University of Central Florida. It is my first time working with Unreal Engine, and I am the technical
+                    designer and UI programmer for a development team of 14 people.</p>
+            </section>
 
-        <section id="links">
-            <h2>Project Repository</h2>
-            <a href="https://github.com/ChelseaSoto/CitrusBombers" target="_blank" class="styled-link">
-                View Project Repository on GitHub
-            </a>
+            <section id="links">
+                <h2>Project Repository</h2>
+                <a href="https://github.com/ChelseaSoto/Revenant" target="_blank" class="styled-link">
+                    View Project Repository on GitHub
+                </a>
 
-            <h2>Where To Play</h2>
-            <p>To be announced!</p>
-        </section>
+                <h2>Where To Play</h2>
+                 <p>To be announced!</p>
+            </section>
+            
+            <section id="devlog" role = "region" aria-labelledby="devlog-title">
+                <h2 id="devlog-title">Devlog</h2>
+                <p>This section will be regularly updated with progress reports, development challenges, and milestones.</p>
+                
+                <div class="devlog-entry" id="devlog-1">
+                    <div class="devlog-header">
+                        <h3>Devlog 1: Starting with Unreal Engine</h3>
+                        <span>October 5, 2024</span>
+                    </div>
 
-        <!--<section id="devlog">
-            <h2>Devlog</h2>
-            <p>This section will be regularly updated with progress reports, development challenges, and milestones.</p>
-            <h3>Devlog 1: Starting with Unreal Engine</h3>
-            <p>In the early stages of development, we decided to use Unreal Engine for its powerful capabilities in rendering and handling complex environments.
-                My main focus during this phase was to set up the game’s technical architecture, including core mechanics like movement and interaction.</p>
-            <h3>Devlog 2: User Interface Design</h3>
-            <p>As the technical designer, I worked closely with the UI team to design a clean, intuitive interface. We focused on creating interactive elements
-                that feel immersive and match the overall tone of the game.</p>
-        </section>-->
-    </main>
+                    <p>In the early stages of development, we decided to use Unreal Engine 5.3.2 for its powerful capabilities in rendering and handling complex environments.</p>
+                    <p>For our prototype submission, we were required to have a main menu that allows us to go into our code prototype and our art prototype. In order to return
+                        to the main menu while in one of the prototypes, I also added in a pause menu.
+                    </p>
+                    <p> One of the requirements for our game is to have it function with an XBOX One controller, and so I also researched and implemented functionality to used gamepad
+                        and keyboard into the menus. This was a super complicated process for me since this is my first time using Unreal but I got it to work in the main menu.
+                    </p>
+                </div>
+                
+                <div class="devlog-entry" id="devlog-2">
+                    <div class="devlog-header">
+                        <h3>Devlog 2: Basic Ability Functionality</h3>
+                        <span>October 17, 2024</span>                       
+                    </div>
 
-    <footer>Built with HTML and CSS</footer>
+                    <p>After Hurricane Milton passed through, I finalized the gamepad/keyboard functionality for the pause menu and bug fixed it. I also added the D-Pad functionality
+                        for using abilities in our game. We have the player obtain four different abilities by the end of the game, and they'll be mapped onto numbers 1, 2, 3, and 4
+                        on the keyboard and on the D-Pad for the gamepad. I also added in a functional healthbar since the programmers on our team were adding the health system into
+                        the game.
+                    </p>
+                </div>
+                
+                <div class="devlog-entry" id="devlog-3">
+                    <div class="devlog-header">
+                        <h3>Devlog 3: Graphics Options Menu Gamepad Functionality</h3>
+                        <span>October 24, 2024</span>                       
+                    </div>
 
-    <script src="js/script.js"></script>
+                    <p>Our UI designer created the options menu widget blueprint and its functionality to change resolution, graphics quality, and whether the game is in full screen or 
+                        windowed mode.
+                    </p>
+                    <p>I linked the options menu to both the main menu and pause menu and worked on the gamepad functionality for it. This was by far the hardest thing I encountered
+                        so far in this project.
+                    </p>
+                    <p>After figuring out different options that I can take without changing up our UI designer's design too much, I added an additional horizontal box with buttons to follow
+                        the same method I used in the previous menus, but without needed to click the actual buttons. The buttons are highlighting what option the player is on and the player
+                        can flick the joystick left or right to select the specific setting that they want. I felt this was the best decision to make in terms of user experience so that the
+                        player doesn't need to use their joystick to navigate through all the left and right buttons for each option.
+                    </p>  
+                </div>
+                
+                <div class="devlog-entry" id="devlog-4">
+                    <div class="devlog-header">
+                        <h3>Devlog 4: Implementing Health and Stamina Assets</h3>
+                        <span>October 31, 2024</span>                        
+                    </div>
 
-    <img id="cursor-gif" src="assets/images/hearts.gif" alt="Follow Cursor">
+                    <p>Our UI designer created the HUD assets for the health and stamina of our player and so I added it in and put it on the HUD how she and the others wanted it.
+                    </p>
+                    <p>Sidenote: I have been having the roughest time in my personal life, but I'm hoping things will be getting better soon.</p>
+                </div>
+                
+                <div class="devlog-entry" id="devlog-5">
+                    <div class="devlog-header">
+                        <h3>Devlog 5: Async Loading Screen Plugin</h3>
+                        <span>November 9, 2024</span>                        
+                    </div>
 
-</body>
-</html>
+                    <p>When going into a level of our game, the lights take a while to get where they're supposed to. I believe part of it is the dynamic lighting, but I wanted to
+                        see if the issue can be fixed with a loading screen. I put a lot of research into this because a lot of solutions have to do with level streaming, which
+                        would conflict with all the progress the programmers and level designers have already made. Another solution was completely coding async loading screens with C++;
+                        however, the university computers apparently don't like the use of C++. With the professor's permission, we are using the
+                        <a href = "https://www.fab.com/listings/f8aabb9a-7c96-4f79-97ff-04bcc146e595">Async Loading Screen</a> plugin. This plugin allows us to have multiple loading screen
+                        backgrounds and text to choose from at random in between changing levels. Unfortunately, the university computers also cannot download plugins so we've been keeping
+                        this in a separate branch on GitHub and will refine it when we're closer to submission. But it's good to know it exists.
+                </p>
+                </div>
+                    
+                <div class="devlog-entry" id="devlog-6">
+                    <div class="devlog-header">
+                        <h3>Devlog 6: Implementing D-Pad Assets</h3>
+                        <span>November 12, 2024</span>                        
+                    </div>
+
+                    <p> I implemented the assets our UI designer created. Throughout the game, an ability is always selected, but we want the UI to show which ability is selected and which button on the D-Pad to click for the other ability. I have the basic functionality implemented in to change which image shows based on
+                        which ability is chosen; however, I still need to add conditionals to show specific images based on which abilities have been unlocked.
+                    </p>
+                    <p>I also fixed some scaling issues by adding a scale box and size box to each widget blueprint.</p>
+                </div>
+
+                <div class="devlog-entry" id="devlog-7">
+                    <div class="devlog-header">
+                        <h3>Devlog 7: Credits Layout and Functionality</h3>
+                        <span>November 24, 2024</span>  
+                    </div>
+
+                    <p>I was out of town this weekend and Thanksgiving is in a few days, so right now I'm preparing for our vertical slice submission. I mainly focused on updating our Game Design Document
+                        and Technical Design Document as well as creating data tables for some of our visual novel cutscenes.
+                    </p>
+                    <p>For the Vertical Slice, I felt that we should have a credit screen since we've all been working hard on this game. I wanted to make a credit screen similar to the end
+                        of a movie since our game is heavy on its narrative. We'll be having other people voice act and make music for our game, so the credit screen will get longer.
+                    </p>
+                    <p>For its functionality, I added in the scrolling animation and have it start when the widget blueprint gets added to viewport. I also attempted to do the gamepad
+                        functionality process I've been doing for the previous menus (it didn't work). Once I revisit it, I am going to just have the button there for mouse, but add a 
+                        keybind to exit out of the credit screen by default.
+                    </p>
+                </div>
+
+                <div class="devlog-entry" id="devlog-8">
+                    <div class="devlog-header">
+                        <h3>Devlog 8: Dialogue Boxes, Data Tables and Visual Novel Cutscenes</h3>
+                        <span>December 1, 2024</span>
+                    </div>
+                    
+                    <p>This is the hardest thing I've done by far. I created a duplicate of the dialogue box widget blueprint to work on it without causing conflicts or issues while our UI
+                        designer works on the original blueprint. With the mixture of the timecrunch, and complexity of the blueprints I was creating (plus watching YouTube videos about it),
+                        I decided to save this for next semester and focus on bug fixing while also working on other finals that I have this week.
+                    </p>
+                </div>
+                
+                <div class="devlog-entry" id="devlog-9">
+                    <div class="devlog-header">
+                        <h3>Devlog 9: Vertical Slice Presentation</h3>
+                        <span>December 4, 2024</span>
+                    </div>
+
+                    <p>We presented our vertical slice to our class. Technically we don't have to work on this project until Spring semester starts, but I want to work more during this winter
+                        break.
+                    </p>    
+                </div>
+            </section>
+        </main>
+
+        <footer>Built with HTML and CSS</footer>
+
+        <script src="js/script.js"></script>
+
+        <img id="cursor-gif" src="assets/images/hearts.gif" alt="Follow Cursor">
+
+    </body>
+    </html>

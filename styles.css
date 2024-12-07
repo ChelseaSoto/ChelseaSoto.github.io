@@ -195,6 +195,42 @@ body.dark-mode .portfolio-dropdown:hover a {
 
 .skip-to-main:hover {
     background-color: #FE93D4;
+    transform: scale(1.1);
+}
+
+/* Back to Top*/
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #E40A88;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#back-to-top img {
+    width: 50px; /* Size of the icon */
+    height: 45px;
+    fill: #fff; /* Icon color */
+}
+
+#back-to-top.visible {
+    display: block;
+    opacity: 1;
+}
+
+#back-to-top:hover {
+    background-color: #FE93D4;
+    transform: scale(1.1);
 }
 
 /* Toggle Button */
@@ -234,7 +270,7 @@ main {
     transition: background-color 0.3s ease;
 }
 
-/* Section */
+/* Section Styles */
 section {
     margin-bottom: 2rem;
 }
@@ -408,7 +444,7 @@ a:hover {
 /* Mobile Styles */
 @media (max-width: 768px) {
     /* Header */
-    header { 
+    header {
         padding: 1.5rem 1rem;
     }
 
@@ -433,22 +469,35 @@ a:hover {
         text-align: left;
     }
 
+    /* Portfolio Dropdown */
     .portfolio-dropdown {
         display: none;
     }
 
-    /* Skip to main button */
+    /* Skip to Main Button */
     .skip-to-main {
         top: 10px;
         left: 10px;
     }
 
-    /* Theme toggle button */
+    /* Theme Toggle Button */
     #theme-toggle {
         top: 10px;
         right: 10px;
     }
+
+    /* Devlog Header */
+    .devlog-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .devlog-header span {
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
 }
+
 
 #cursor-gif {
     position: absolute;
@@ -513,4 +562,60 @@ a:hover {
 html, body {
     width: 100%;
     overflow-x: hidden;
+}
+
+/* Devlop Styles */
+.devlog-entry {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #fe93d4;
+    border-radius: 5px;
+    background-color: #ffd5ed;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.devlog-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.devlog-entry h3 {
+    color: #e30083;
+    font-size: 1.5rem;
+}
+
+.devlog-entry h4 {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.devlog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.devlog-header h3 {
+    font-size: 1.5rem;
+    color: #e30083;
+    margin: 0;
+}
+
+.devlog-header span {
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+}
+
+.devlog-entry {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.devlog-entry.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
