@@ -478,12 +478,28 @@ a:hover {
     .skip-to-main {
         top: 10px;
         left: 10px;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .skip-to-main img {
+        width: 30px;
+        height: 30px;
     }
 
     /* Theme Toggle Button */
     #theme-toggle {
         top: 10px;
         right: 10px;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+
+    #theme-toggle img {
+        width: 30px;
+        height: 30px;
     }
 
     /* Devlog Header */
