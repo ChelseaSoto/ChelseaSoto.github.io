@@ -478,8 +478,8 @@ a:hover {
     .skip-to-main {
         top: 10px;
         left: 10px;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         padding: 5px;
     }
 
@@ -492,8 +492,8 @@ a:hover {
     #back-to-top {
         top: 10px;
         left: 10px;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         padding: 5px;
     }
 
