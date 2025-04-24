@@ -706,3 +706,38 @@ section {
     margin-bottom: 3rem;
     padding: 1rem 0;
 }
+
+#download-resume {
+    background-color: #E40A88;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 8888;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#download-resume img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    fill: white;
+}
+
+#download-resume:hover {
+    background-color: #FE93D4;
+    transform: scale(1.1);
+}
+
+.resume-page-buttons {
+    position: fixed;
+    bottom: 40px;
+    right: 190px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    z-index: 8888;
+}
